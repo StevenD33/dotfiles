@@ -1,0 +1,26 @@
+" Basic Command
+set nu
+set mouse=a
+set ignorecase
+set autoindent
+syntax on
+
+" Shortcut 
+noremap <C-L> :nohl<CR>
+cmap wsu w !sudo tee > /dev/null %
+map <F5> :set spell spelllang=fr_FR<CR>
+map <F4> :set spell&<CR>
+
+" Indetation and spacing rules
+set expandtab
+set ts=4
+set shiftwidth=4
+set softtabstop=4
+
+" For undo history
+set undofile
+set undodir=~/.vim/undodir
+
+autocmd InsertEnter * set cul
+autocmd InsertLeave * set nocul
+

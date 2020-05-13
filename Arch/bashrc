@@ -1,0 +1,12 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias todo="todo.sh"
+PS1='[\u@\h \W]\$ '
+alias TERMINAL=zsh
+export PATH="$HOME/.local/bin:$PATH"
